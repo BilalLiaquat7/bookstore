@@ -1,5 +1,7 @@
-export default function Categories() {
-  return (<>
+const Categories = () => (
+  <>
     <div>Categories</div>
-    </>);
-}
+  </>
+);
+
+export default Categories;
