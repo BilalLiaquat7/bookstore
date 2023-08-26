@@ -32,7 +32,26 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 5rem;
+  gap: 2rem;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5vh;
+  gap: 1rem;
+  padding: 1.5rem;
 }
