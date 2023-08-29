@@ -1,174 +1,70 @@
-<a name="readme-top"></a>
+# Getting Started with Create React App
 
-<div align="center">
-  <br/>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-  <h3><b>Book Store Project </b></h3>
+## Available Scripts
 
-</div>
+In the project directory, you can run:
 
-# 📗 Table of Contents
+### `npm start`
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#Run-tests)
-- [🎥 Live Demo](#live-demo)
-- [🎥 Future Feature](#future-feature)
-- [👥 Authors](#authors)
-- [🎥 Project Presentation](#Project-presentation)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgments](#acknowledgements)
-- [📝 License](#license)
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-# 📖 Book Store Project <a name="about-project"></a>
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-> This website shows a sneak peek into the projects I have developed and deployed, showcasing my skills in HTML and CSS.With a passion for web development, I have honed my expertise in these technologies to create stunning and functional websites.
+### `npm test`
 
-## 🛠 Built With <a name="built-with"></a>
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Tech Stack <a name="tech-stack"></a>
+### `npm run build`
 
-<details>
-  <summary>HTML</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/html/">Html</a></li>
-  </ul>
-</details>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<details>
-  <summary>CSS</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/css/default.asp">css</a></li>
-  </ul>
-</details>
-<details>
-  <summary>js</summary>
-  <ul>
-    <li><a href="https://www.w3schools.com/css/default.asp">javaScript</a></li>
-  </ul>
-</details>
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<details>
-  <summary>React</summary>
-  <ul>
-    <li><a href="https://react.dev/">javaScript</a></li>
-  </ul>
-</details>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Key Features <a name="key-features"></a>
+### `npm run eject`
 
-- Use the high quality design for the project😊👌
-- Use the semantics elements💯
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## 💻 Getting Started <a name="getting-started"></a>
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Prerequisites
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-In order to run this project you need:
+## Learn More
 
-- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
-- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
-- Install the `npm` package manager use this [to install both node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Setup
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Clone this repository to your desired folder or download the Zip folder:
+### Code Splitting
 
-```
-git clone https://github.com/BilalLiaquat7/bookstore
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- Navigate to the location of the folder in your machine:
+### Analyzing the Bundle Size
 
-**`you@your-Pc-name:~$ cd desktop`**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Install
+### Making a Progressive Web App
 
-To install all dependencies, run:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-```
-npm install
-```
+### Advanced Configuration
 
-### Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-To run the project, follow these instructions:
+### Deployment
 
-- After Cloning this repo to your local machine.
-- To get it running on your default browser and local host, run:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-1. Open the index with live server from the code editor
-2. Or you can double click on the index to open it in the browser
+### `npm run build` fails to minify
 
-### Run tests
-
-To run tests, run the following command:
-
-- Track HTML linter errors run:
-
-```
-npx hint .
-```
-
-- Track CSS linter errors run:
-
-```
-npx stylelint "**/*.{css,scss}"
-```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🎥 Future Feature <a name="future feature"></a>
-
-- In future we will improve design.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 👥 Authors <a name="authors"></a>
-
-👤 **Muhammad Bilal Liaquat**
-
-- GitHub: [@githubhandle](https://github.com/BilalLiaquat7/)
-- LinkedIn: [@Linkedin](https://www.linkedin.com/in/muhammad-bilal-liaquat-87863390/)
-
-<p align="right">(<a href="#live-demo">back to top</a>)</p>
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to leave any suggestions at the [Issues page](https://github.com/BilalLiaquat7/bookstore/issues)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ⭐️ Show your support <a name="support"></a>
-
-Give a ⭐️ if you like this project and how I managed to build it!
-
-<p align="right">(<a href="#readme-top ">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-- The original design ideal from Microverse💕.
-- Project from [Microverse](https://bit.ly/MicroverseTN) module 1.
-- Thanks to the Microverse team for the great curriculum.
-- Thanks to the Code Reviewer(s) for the insightful feedbacks.
-- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
-- Hat tip to anyone whose code was used.
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE.MD) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
