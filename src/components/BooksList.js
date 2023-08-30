@@ -10,7 +10,7 @@ const BooksList = () => {
       <br />
       <br />
       {books.map((book) => (
-        <div key={book.id}>
+        <div key={book.item_id}>
           <Book book={book} />
         </div>
       ))}

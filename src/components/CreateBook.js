@@ -11,7 +11,7 @@ const CreateBook = () => {
 
   const onSaveBookClicked = () => {
     if (title && name) {
-      dispatch(addBook({ id: counter += 1, title, author: name }));
+      dispatch(addBook({ item_id: counter += 1, title, author: name }));
     }
     setTitle('');
     setName('');
