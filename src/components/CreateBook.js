@@ -1,20 +1,28 @@
 import { useDispatch } from 'react-redux';
 import { useState } from 'react';
-import { addBook } from '../redux/books/booksSlice';
+import { nanoid } from '@reduxjs/toolkit';
+import { addABook } from '../redux/books/booksSlice';
 
 const CreateBook = () => {
   const dispatch = useDispatch();
+  const categories = ['Devops', 'QA', 'Dev'];
 
-  const [title, setTitle] = useState('');
-  const [name, setName] = useState('');
-  let counter = -1;
+  const [book, setbook] = useState({
+    item_id: nanoid(),
+    title: '',
+    author: '',
+    category: categories[0],
+  });
+
+  const handleChange = (e) => {
+    setbook({ ...book, [e.target.name]: e.target.value });
+  };
 
   const onSaveBookClicked = () => {
-    if (title && name) {
-      dispatch(addBook({ item_id: counter += 1, title, author: name }));
+    if (book.title && book.author) {
+      setbook({ ...book, item_id: nanoid() });
+      dispatch(addABook(book));
     }
-    setTitle('');
-    setName('');
   };
 
   return (
@@ -22,14 +30,16 @@ const CreateBook = () => {
       <input
         type="text"
         placeholder="Book title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
+        value={book.title}
+        name="title"
+        onChange={handleChange}
       />
       <input
         type="text"
         placeholder="Author name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
+        value={book.author}
+        name="author"
+        onChange={handleChange}
       />
 
       <button onClick={onSaveBookClicked} type="button">Submit</button>

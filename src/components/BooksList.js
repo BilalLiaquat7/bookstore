@@ -1,10 +1,16 @@
-import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Book from './Book';
 import CreateBook from './CreateBook';
-import { selectAllBooks } from '../redux/books/booksSlice';
+import { selectAllBooks, fetchBooks } from '../redux/books/booksSlice';
 
 const BooksList = () => {
+  const dispatch = useDispatch();
   const books = useSelector(selectAllBooks);
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, [dispatch]);
+
   return (
     <div>
       <br />
