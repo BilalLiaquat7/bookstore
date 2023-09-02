@@ -5,7 +5,7 @@ import Categories from './components/Categories';
 import Navbar from './components/Navbar';
 
 const App = () => (
-  <div>
+  <div className="mainsection">
     <Navbar />
     <Routes>
       <Route path="/" element={<BooksList />} />
