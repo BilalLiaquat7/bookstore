@@ -28,28 +28,38 @@ const CreateBook = () => {
 
   return (
     <div>
-      <h2>Add New Book</h2>
-      <div className="form">
-        <input
-          className="input"
-          type="text"
-          placeholder="Book title"
-          value={book.title}
-          name="title"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          placeholder="Author name"
-          value={book.author}
-          name="author"
-          onChange={handleChange}
-        />
-
-        <button className="button" onClick={onSaveBookClicked} type="button">
-          Submit
-        </button>
+      <div className="bookform">
+        <h1 className="heading">Create Book</h1>
+        <div className="input">
+          <input
+            className="titleinput"
+            type="text"
+            placeholder="Enter book name"
+            name="title"
+            value={book.title}
+            onChange={handleChange}
+          />
+          <select
+            className="cat"
+            name="author"
+            onChange={handleChange}
+          >
+            {categories.map((option) => (
+              <option key={option} value={option}>
+                {option}
+              </option>
+            ))}
+          </select>
+          <button
+            type="submit"
+            className="btnsubmit"
+            onClick={onSaveBookClicked}
+          >
+            Add Book
+          </button>
+        </div>
       </div>
+
     </div>
   );
 };
