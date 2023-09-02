@@ -4,9 +4,9 @@ import { BiSolidGroup } from 'react-icons/bi';
 const Books = () => (
   <div className="navbarP">
     <div className="navbar">
-      <h1>Bookstore CMS</h1>
-      <ul className="">
-        <li className="">
+      <span className="Bookstore-CMS Text-Style-3">Bookstore CMS</span>
+      <ul>
+        <li>
           <Link to="/">Books</Link>
         </li>
         <li>

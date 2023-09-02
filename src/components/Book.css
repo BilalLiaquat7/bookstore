@@ -1,71 +1,122 @@
+/* stylelint-disable csstree/validator */
+/* stylelint-disable declaration-colon-newline-after */
 .Chapter {
+  width: 7.875rem;
   height: 1.125rem;
+  margin: 0.063rem 3.625rem 0 3.688rem;
+  opacity: 0.5;
+  font-size: 0.813rem;
   font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
 }
 
 .category {
-  height: 1rem;
+  width: 3.063rem;
+  height: 1.125rem;
+  margin: 0 2.438rem 0 0;
+  opacity: 0.5;
+  font-size: 0.875rem;
   font-weight: bold;
-  margin-right: 2.438rem;
-  margin-left: 0.7rem;
-  color: rgb(166, 164, 164);
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
 }
 
 .Title {
+  width: 12.313rem;
   height: 1.813rem;
-  font-size: 2rem;
+  font-size: 1.375rem;
   font-weight: bold;
-  margin-left: 0.5rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: -0.2px;
-  color: black;
+  color: var(--black-two);
 }
 
 .author {
+  width: 6.688rem;
   height: 1.188rem;
-  margin-top: 0.25rem;
+  margin: 0.25rem 0 0;
   font-size: 0.875rem;
   font-weight: 300;
-  margin-left: 0.6rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   color: #4386bf;
 }
 
 .comments {
   height: 1.2rem;
-  margin: 0.2rem 1rem 0.1rem 0;
-  font-size: 0.9rem;
-  font-weight: 300;
   color: #4386bf;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .percentage {
-  margin-right: 0.688rem;
+  width: 4.25rem;
+  height: 2.438rem;
+  margin: 0.063rem 0 0 0.688rem;
   font-size: 2rem;
-  color: black;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
 }
 
 .Completed {
-  margin: 0.5rem 0 0.75rem 0;
+  width: 5rem;
+  height: 1.125rem;
+  margin: 0.438rem 0 0.75rem 0.75rem;
   opacity: 0.5;
   font-size: 0.875rem;
-  color: rgb(132, 132, 132);
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--black-two);
 }
 
 .Lesson {
-  height: 1.4rem;
+  width: 4.688rem;
+  height: 1.313rem;
+  margin: 0.438rem 6.813rem 0.25rem 3.688rem;
   font-size: 1rem;
   font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
   letter-spacing: -0.4px;
-  color: black;
+  color: var(--black-two);
 }
 
 .update {
-  padding: 0.6rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  background-color: rgb(13, 120, 202);
+  background-color: var(--azure);
 }
 
 .category .Lesson {
@@ -101,15 +152,17 @@
 .oval {
   width: 5rem;
   height: 5rem;
-  border: 6px #4386bf outset;
   border-radius: 50%;
-  border-image-slice: 1;
+  background:
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(rgb(62, 168, 255) 75%, rgb(216, 216, 216) 0);
 }
 
 .circle {
   display: flex;
+  flex: 1;
   gap: 1.5rem;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
