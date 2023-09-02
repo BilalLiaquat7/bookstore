@@ -1,8 +1,7 @@
-/* Base Styles */
 .bookform {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 96%;
   padding: 2rem;
   background-color: white;
   border-radius: 1rem;
@@ -28,10 +27,11 @@
 }
 
 .btnsubmit {
-  padding: 1rem 1.25rem 1rem 1.5rem;
+  padding: 1rem 5rem 1rem 5rem;
   border-radius: 3px;
   background-color: rgb(19, 132, 231);
   border: none;
+  color: white;
 }
 
 .heading {

@@ -9,40 +9,40 @@ const Book = ({ book }) => {
     dispatch(deleteBook(id));
   };
   return (
-    <div className="Lesson-Panel" key={book.item_id}>
+    <div className="main-book" key={book.item_id}>
       <div>
-        <p className="School-of">{book.category}</p>
+        <p className="category">{book.category}</p>
         <h1 className="Title">{book.title}</h1>
-        <p className="Suzanne-Collins">
+        <p className="author">
           Author:
           {' '}
           {book.author}
         </p>
         <div className="btn">
-          <button type="button" className="Comments">Comments</button>
+          <button type="button" className="comments">Comments</button>
           <div className="vertical" />
           <button
             type="button"
-            className="Comments"
+            className="comments"
             onClick={() => onRemoveClicked(book.item_id)}
           >
             Remove
           </button>
           <div className="vertical" />
-          <button type="button" className="Comments">Edit</button>
+          <button type="button" className="comments">Edit</button>
         </div>
       </div>
       <div className="circle">
-        <div className="Oval-2" />
+        <div className="oval" />
         <div>
-          <h1 className="-Percent-Complete">64%</h1>
+          <h1 className="percentage">64%</h1>
           <p className="Completed">Complete</p>
         </div>
       </div>
       <div className="last">
-        <span className="Current-Chapter Text-Style-7">Current Chapter</span>
-        <span className="Current-Lesson">Chapter 17</span>
-        <div className="Rectangle-2">Update Progress</div>
+        <span className="Chapter">Current Chapter</span>
+        <span className="Lesson">Chapter 17</span>
+        <div className="update">Update Progress</div>
       </div>
     </div>
 
