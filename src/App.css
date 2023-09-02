@@ -3,20 +3,60 @@
   background-color: #f5f6fa;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Bookstore-CMS {
+  width: 15rem;
+  height: 2.313rem;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.navbarP {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   padding: 1.5rem;
   padding-left: 4rem;
-  background-color: white;
+}
+
+.Oval {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  margin-right: 3rem;
+  padding: 0.5rem;
+  border: solid 1px gainsboro;
+}
+
+.icon {
+  color: #078ff7;
 }
 
 ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 3rem;
-  font-size: x-large;
+  align-items: center;
   list-style-type: none;
 }
 
@@ -27,14 +67,22 @@ li a {
   font-weight: 500;
 }
 
-.book {
-  display: flex;
-  flex-direction: row;
+.main {
+  padding: 4%;
+  background-color: #ffff;
+  margin-top: 2px;
 }
 
-.book .action {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  width: 100%;
+:root {
+  --bubble-gum-pink: #ff5ab7;
+  --black: #1e1e1e;
+  --pinkish-grey: #c7c7c7;
+  --very-light-pink: #c4c4c4;
+  --white: #fafafa;
+  --white-two: #fff;
+  --medium-blue: #307bbe;
+  --pale-grey: #f5f6fa;
+  --azure: #0290ff;
+  --white-three: #e8e8e8;
+  --black-two: #121212;
 }

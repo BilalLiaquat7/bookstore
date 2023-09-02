@@ -1,19 +1,43 @@
-.form {
+.bookform {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  padding: 4rem;
-}
-
-.button {
-  background-color: blue;
+  flex-direction: column;
+  width: 99%;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 1rem;
 }
 
 .input {
-  height: 2.5rem;
-  width: 35rem;
-  padding: 4px;
-  padding-left: 8px;
-  font-size: large;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.titleinput {
+  flex: 4;
+  display: flex;
+  padding: 1rem;
+  border-radius: 4px;
+  border: solid 1px #e6e6e6;
+  background-color: white;
+}
+
+.cat {
+  flex: 2;
+}
+
+.btnsubmit {
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 3px;
+  background-color: rgb(19, 132, 231);
+  border: none;
+  color: white;
+}
+
+.heading {
+  margin: 2rem 33rem 1.25rem 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
 }
